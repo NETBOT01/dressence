@@ -1,0 +1,183 @@
+<html><head><base href="https://dressence.xyz/">
+<title>Dressence - Your Personal Style Guide</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1445205170230-053b83016050?w=1600') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.tagline {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #f8c291;
+}
+
+.features {
+    padding: 5rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    background: #f9f9f9;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #f8c291;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #e59866;
+}
+
+.contact {
+    padding: 5rem 2rem;
+    text-align: center;
+    background: #2c3e50;
+    color: white;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 1rem 2rem;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+</style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Dressence</div>
+        <div class="nav-links">
+            <a href="https://dressence.com/about">About</a>
+            <a href="https://dressence.com/services">Services</a>
+            <a href="https://dressence.com/contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Dressence</h1>
+            <p class="tagline">Your Style, Our Expertise</p>
+            <a href="https://dressence.com/get-started" class="cta-button">Get Styled Now</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <img alt="Professional stylist helping client choose clothes, lifestyle photography" src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=600" width="300" height="200">
+            <h3>Personal Styling</h3>
+            <p>Get personalized recommendations from our expert stylists tailored to your preferences and lifestyle.</p>
+        </div>
+        <div class="feature-card">
+            <img alt="Organized wardrobe with color-coordinated clothes, minimal style" src="https://images.unsplash.com/photo-1493655161922-ef98929de9d8?w=600" width="300" height="200">
+            <h3>Wardrobe Organization</h3>
+            <p>Learn how to maximize your existing wardrobe and create stunning combinations.</p>
+        </div>
+        <div class="feature-card">
+            <img alt="trendy outfit laid flat on white background, fashion photography" src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600" width="300" height="200">
+            <h3>Trend Analysis</h3>
+            <p>Stay up-to-date with the latest fashion trends and learn how to incorporate them into your style.</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Get in Touch</h2>
+        <p>Ready to transform your style? Contact us at:</p>
+        <p><a href="mailto:atharvadeshsgds@gmail.com" style="color: #f8c291; text-decoration: none;">atharvadeshsgds@gmail.com</a></p>
+        <div style="margin-top: 2rem;">
+            <a href="https://dressence.com/book-consultation" class="cta-button">Book a Consultation</a>
+        </div>
+    </section>
+
+<script>
+window.addEventListener('scroll', function() {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 50) {
+        nav.style.background = 'rgba(0,0,0,0.9)';
+    } else {
+        nav.style.background = 'rgba(0,0,0,0.8)';
+    }
+});
+
+document.querySelectorAll('.feature-card').forEach(card => {
+    card.addEventListener('mouseover', function() {
+        this.style.transform = 'translateY(-10px)';
+    });
+    card.addEventListener('mouseout', function() {
+        this.style.transform = 'translateY(0)';
+    });
+});
+</script>
+
+</body></html>
