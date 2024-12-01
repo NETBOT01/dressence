@@ -1,0 +1,182 @@
+<html><head><base href="https://dressence.com/">
+    <title>About Dressence - Your Personal Style Guide</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+        background-color: #fff7f4;
+        color: #333;
+        line-height: 1.6;
+    }
+    
+    .about-hero {
+        padding: 120px 20px 60px;
+        text-align: center;
+        background: linear-gradient(to right, #ffd6c2, #ffe8dc);
+    }
+    
+    .about-hero h1 {
+        font-size: 3rem;
+        color: #2c3e50;
+        margin-bottom: 1rem;
+    }
+    
+    .explanation {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+    
+    .explanation-card {
+        background: white;
+        border-radius: 20px;
+        padding: 30px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        animation: slideUp 0.5s ease-out;
+    }
+    
+    .explanation-card h2 {
+        color: #f8c291;
+        margin-bottom: 15px;
+    }
+    
+    .process-steps {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 40px 20px;
+    }
+    
+    .step {
+        flex: 1;
+        min-width: 250px;
+        max-width: 300px;
+        background: white;
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    
+    .step-icon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 15px;
+        fill: #f8c291;
+    }
+    
+    .delivery-highlight {
+        background: #2c3e50;
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+        margin-top: 40px;
+    }
+    
+    .delivery-highlight h2 {
+        color: #f8c291;
+        margin-bottom: 20px;
+    }
+    
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    nav {
+        position: fixed;
+        width: 100%;
+        padding: 1rem 2rem;
+        background: rgba(0,0,0,0.8);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+    }
+    
+    .logo {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        margin-left: 2rem;
+    }
+    </style>
+    </head>
+    <body>
+        <nav>
+            <div class="logo">Dressence</div>
+            <div class="nav-links">
+                <a href="https://dressence.com/about">About</a>
+                <a href="https://dressence.com/services">Services</a>
+                <a href="https://dressence.com/contact">Contact</a>
+            </div>
+        </nav>
+    
+        <section class="about-hero">
+            <h1>Welcome to Dressence!</h1>
+            <p>Let us explain how we make dressing up fun and easy</p>
+        </section>
+    
+        <section class="explanation">
+            <div class="explanation-card">
+                <h2>What is Dressence?</h2>
+                <p>Imagine having a super-smart friend who knows all about your clothes and helps you pick the perfect outfit every day! That's exactly what Dressence is! We look at all the clothes you already have in your wardrobe and help you choose what to wear for any occasion.</p>
+            </div>
+    
+            <div class="explanation-card">
+                <h2>How Does It Work?</h2>
+                <p>Let's say you have a party tomorrow. Instead of wondering "What should I wear?", just ask Dressence! We'll look at all your clothes and suggest the perfect outfit that will make you look amazing at the party!</p>
+            </div>
+        </section>
+    
+        <section class="process-steps">
+            <div class="step">
+                <svg class="step-icon" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/>
+                </svg>
+                <h3>Connect Your Wardrobe</h3>
+                <p>Tell us about all the clothes you have</p>
+            </div>
+            <div class="step">
+                <svg class="step-icon" viewBox="0 0 24 24">
+                    <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm0 4c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3z"/>
+                </svg>
+                <h3>Get Recommendations</h3>
+                <p>We'll suggest perfect outfits for any occasion</p>
+            </div>
+            <div class="step">
+                <svg class="step-icon" viewBox="0 0 24 24">
+                    <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+                </svg>
+                <h3>Shop Missing Pieces</h3>
+                <p>Need something new? We'll help you find it!</p>
+            </div>
+        </section>
+    
+        <section class="delivery-highlight">
+            <h2>Lightning Fast Delivery!</h2>
+            <p>When you shop through Dressence, your new clothes arrive in just 15-20 minutes!</p>
+            <p>And because we know your exact measurements, everything fits perfectly every time.</p>
+        </section>
+    
+    </body></html>
